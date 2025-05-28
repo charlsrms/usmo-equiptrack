@@ -19,7 +19,7 @@
 
   <div id="profileMenu" class="profile-dropdown-menu" role="menu" aria-labelledby="profileToggle" tabindex="-1">
     <a href="#" onclick="openAccountModal()" role="menuitem" tabindex="0">Profile Settings</a>
-    <a href="login.php" role="menuitem" tabindex="0" onclick="return confirm('Are you sure you want to logout?')">Logout</a>
+    <a href="index.php" role="menuitem" tabindex="0" onclick="return confirm('Are you sure you want to logout?')">Logout</a>
   </div>
 </div>
 </div>
