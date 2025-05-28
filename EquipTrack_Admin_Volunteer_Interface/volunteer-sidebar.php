@@ -13,7 +13,7 @@
     <i class="fas fa-history"></i> Equipment Tracker
   </a>
 
-  <a href="login.php" onclick="return confirm('Are you sure you want to logout?')">
+  <a href="index.php" onclick="return confirm('Are you sure you want to logout?')">
     <i class="fas fa-sign-out-alt"></i> Logout
   </a>
 </div>
