@@ -1,0 +1,392 @@
+:root {
+  --primary-color: #3498db;       /* Blue */
+  --primary-dark: #103e5b;       /* Darker blue */
+  --primary-light: #4aabec;      /* Lighter blue */
+  --good-color: #2ecc71;    /* Green */
+  --defect-color: #f04a4a;      /* Red */
+  --bad-color: #ff0000;
+}
+*
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+#content-holder
+{
+    padding-left: 220px;
+    padding-right: 50px;
+}
+.content
+{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 15px;
+    background-color: #ebf0f2;
+    width: 100%;
+    border-radius: 7px;
+}
+#title-holder p
+{
+    padding: 15px 15px 15px 15px;
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    color: #13364e;
+}
+
+#dropdown-section
+{
+    position: relative;
+    padding: 10px 0px 10px 0px;
+}
+
+#dropdown-holder
+{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px;
+}
+#dropdown-holder div
+{
+    color: #13364e;
+    font-size: 20px;
+    padding: 15px 15px 15px 15px;
+    border-width: 1px;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+  width: 150px;
+  padding: 2px;
+  font-size: 17px;
+  border: 2px solid var(--primary-dark);
+  border-radius: 5px;
+  background-color: var(--primary-dark);
+  color: white;
+  margin-top: 5px;
+  
+  /* Dropdown arrow */
+  appearance: none; /* Removes default arrow in modern browsers */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  
+  /* Custom arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%233498db" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5);
+}
+
+#date
+{
+    width: 150px;
+    margin-top: 4px;
+    border: 2px solid var(--primary-dark);
+    border-radius: 5px;
+    background-color: var(--primary-dark);
+    padding: 3px;
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/* print button */
+
+.print-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.print-btn:hover {
+  color: #007bff;
+}
+#display-section
+{
+    position: relative;
+    padding-bottom: 50px;
+}
+/* table 1 */
+table.informationTable
+{
+    margin-top: 2%;
+    border: 1px solid #000000;
+    border-collapse:collapse;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+table.informationTable td
+{
+    border: 1px solid #000000;
+    padding: 3px 2px;
+    text-align: center;   
+    font-family: 'Segoe UI';
+    height: 20px;
+    width: auto;
+    background-color: white;
+}
+col.first-column {
+  width: 35%; /* Set specific width */
+}
+
+/* table 2*/
+table.blueTable {
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  width: 95%;
+  text-align: center;
+  border-collapse:collapse;
+  margin-top: 25px;
+  table-layout:fixed;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #000000;
+  padding: 3px 2px;
+  text-align: center;   
+  font-family: 'Segoe UI';
+  height: 20px;
+}
+table.blueTable tr:nth-child(1) {
+  font-weight: bold;
+}
+
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable thead {
+    border-bottom: 1px solid #000000
+}
+table.blueTable thead th {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  font-family: 'Segoe UI';
+  border-left: 1px solid #000000;
+}
+.good-cell {
+background-color: #2ecc71 !important;
+color: black !important;
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+
+.defect-cell {
+background-color: #f04a4a !important;
+color: black !important;
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+
+.bad-cell {
+background-color: red !important;
+color: black !important;
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+
+.blue-cell {
+background-color: #103e5b !important;
+color: white !important;
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+
+table, th, td {
+-webkit-print-color-adjust: exact;
+print-color-adjust: exact;
+}
+
+#display-section p
+{
+    padding-top: 15px;
+    position: relative;
+    font-size: 35px;
+    font-family: Verdana;
+    color: #f5951a;
+    font-weight: 600;
+    print-color-adjust: exact;
+}
+
+/* submit button */
+#submit-btn
+{
+    position: relative;
+    display: block;
+    background-color: var(--primary-dark);
+    border: none;
+    width: 100px;
+    height: 30px;
+    top: 50%;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+}
+#submit-btn:hover
+{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#table1-header tr
+{
+    display: none;
+    background-color: #ffbf6d;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+/* usmo div */
+#usmo-div 
+{
+    display: none;  
+    position: relative;
+    height: 400px;
+  
+    align-items: center;
+    justify-content: center;
+}
+#usmo-div p
+{
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    color: black;
+}
+#usmo-div img
+{
+    width: 120px;
+    height: 120px;
+    print-color-adjust: exact;
+}
+#usmo-logo 
+{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+@page {
+  size: landscape;
+}
+@media print {
+
+
+    /* Hide non-essential UI like buttons, sidebars, dropdowns */
+    .print-btn, #title-holder,
+    .sidebar,
+    #dropdown-section, #display-section-text,
+    #submit-btn {
+    display: none !important;
+    }
+
+    /* Use full width */
+    #content-holder {
+    padding: 0 !important;
+    }
+
+    .content {
+    margin: 0 !important;
+    width: 100% !important;
+    background: white !important;
+    }
+
+    body {
+    background: white !important;
+    color: black !important;
+    }
+
+    /* Improve table print layout */
+    table {
+    width: 100% !important;
+    font-size: 12px !important;
+    }
+
+    th, td {
+    padding: 5px !important;
+    }
+
+    /* Avoid page breaks inside rows */
+    tr 
+    {
+        page-break-inside: avoid;
+    }
+
+    /* Optional: Add page breaks after major sections */
+    #display-section 
+    {
+        page-break-before: auto;
+        page-break-after: always;
+    }
+    #display-section p 
+    {
+        font-size: 30px;
+        font-family: Verdana;
+        color: #f5951a;
+        font-weight: 600;
+    }
+    #table1-header tr
+    { 
+        display: table-row !important;
+    }
+    #table1-header td
+    {
+        background-color: #ffbf6d;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+    #usmo-div 
+    {
+        display: flex;  
+        position: relative;
+        height: 240px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #usmo-div p
+    {
+        position: relative;
+        top: 70px;
+        font-size: 40px;
+        font-family: 'Times New Roman';
+        color: black;
+    }
+    #usmo-div img
+    {
+        width: 120px;
+        height: 120px;
+        print-color-adjust: exact;
+    }
+    #usmo-logo 
+    {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+}

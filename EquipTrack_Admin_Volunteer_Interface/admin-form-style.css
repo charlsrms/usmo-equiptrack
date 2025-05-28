@@ -1,0 +1,266 @@
+    .undertaking-container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      align-items: center;
+    }
+
+    .undertaking-header {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      color: var(--text-dark);
+    }
+
+    .undertaking-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .undertaking-buttons button {
+      background: #005baa;
+      padding: 10px 16px;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .undertaking-buttons button:hover {
+      background: #004080;
+    }
+    .usage-period {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .usage-period label {
+      font-weight: 500;
+      color: var(--text-dark);
+      margin-right: 10px;
+      min-width: 120px;
+    }
+
+    .equipment-details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .equipment-details select,
+    .equipment-details input {
+      flex: 1 1 200px;
+    }
+
+    .condition-badge {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .submit-btn {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    input[type="text"] {
+    padding: 12px 16px;
+    }
+
+    .button-style {
+    background-color: #1565c0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px; /* adds spacing between buttons */
+  }
+
+  .button-style:hover {
+    background-color: #0d47a1;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.6);
+  }
+
+  :root {
+  --primary-color: #1565c0;
+  --primary-hover: #0d47a1;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --input-focus-border: #1565c0;
+  --input-radius: 8px;
+  --shadow-light: rgba(21, 101, 192, 0.2);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Equal column width */
+  gap: 24px; /* Reduce gap for better alignment */
+  align-items: start; /* Aligns inputs to top */
+  margin-bottom: 30px;
+}
+
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1.5px solid var(--input-border);
+  border-radius: var(--input-radius);
+  background-color: var(--input-bg);
+  color: var(--text-dark);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow for custom */
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--text-dark) 50%),
+    linear-gradient(135deg, var(--text-dark) 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  border-color: var(--input-focus-border);
+  outline: none;
+  box-shadow: 0 0 8px var(--input-focus-border);
+}
+
+select option {
+  color: var(--text-dark);
+}
+
+small {
+  margin-top: 6px;
+  font-style: italic;
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap; /* make sure all stay in one row */
+  margin-bottom: 30px;
+}
+
+/* Condition badge section */
+.condition-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+/* Usage period stays as is but no wrap inside */
+.usage-period {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 320px;
+}
+
+/* Make sure label and inputs align nicely */
+.usage-period label {
+  min-width: auto;
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.usage-period input[type="date"] {
+  max-width: 160px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usage-period input[type="date"]:focus {
+  border-color: var(--input-focus-border);
+  outline: none;
+  box-shadow: 0 0 8px var(--input-focus-border);
+}
+
+.usage-separator {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 1rem;
+  user-select: none;
+}
+
+/* Buttons aligned horizontally */
+.form-actions {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+.button-style {
+  background-color: #1565c0;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-style:hover {
+  background-color: #0d47a1;
+  box-shadow: 0 4px 12px rgba(13, 71, 161, 0.6);
+}
+.v-button-style{
+  background-color: #2d6a4f;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+  }
